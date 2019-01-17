@@ -9,14 +9,6 @@ end
 
 
 
-# describe Captain do
-#   describe "::catamaran_operators" do
-#     it "returns all captains of catamarans" do
-#       captains = ["Captain Kidd", "Samuel Axe"]
-#       expect(Captain.catamaran_operators.pluck(:name)).to eq(captains)
-#     end
-#   end
-
 #   describe "::sailors" do
 #     it "returns captains with sailboats" do
 #       captains = ["Captain Cook", "Captain Kidd", "Samuel Axe"]
