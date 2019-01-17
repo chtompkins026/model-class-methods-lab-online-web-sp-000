@@ -4,6 +4,6 @@ class Classification < ActiveRecord::Base
   
   
   def self.my_all
-    
+    all
   end 
 end
