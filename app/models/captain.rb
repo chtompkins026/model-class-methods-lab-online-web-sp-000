@@ -2,7 +2,7 @@ class Captain < ActiveRecord::Base
   has_many :boats
   
   def self.catamaran_operators 
-    
+    where("admiral is ?", FALSE)
   end 
   
 end
