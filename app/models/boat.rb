@@ -33,10 +33,8 @@ class Boat < ActiveRecord::Base
     joins(:classifications).group("boats.id").having('count(*) = 3')
   end 
 
-  # describe "::with_three_classifications" do
-  #   it "returns boats with three classifications" do
-  #     boats = ["Nacra 17", "Zodiac CZ7", "Sun Tracker Regency 254 XP3"].sort
-  #     expect(Boat.with_three_classifications.pluck(:name).sort).to eq(boats)
-  #   end
-  # end
+  def self.longest 
+    order("length DESC").first
+  end 
+  
 end
