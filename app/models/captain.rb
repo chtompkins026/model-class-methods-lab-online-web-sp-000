@@ -9,6 +9,11 @@ class Captain < ActiveRecord::Base
     joins(boats: [:classifications]).where(classifications: {name: "Sailboat"}).uniq 
   end
   
+   def self.motorists
+    joins(boats: [:classifications]).where(classifications: {name: "Motorboat"}).uniq
+  end
+  
+  
   def self.talented_seafarers
     
   end 
